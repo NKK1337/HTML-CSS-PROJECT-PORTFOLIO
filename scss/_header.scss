@@ -1,0 +1,103 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5.625rem;
+    z-index: 9;
+    background: white;
+    justify-content: center;
+    padding-top: 1.875rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    flex-direction: column;
+    padding-right: 4.0625rem;
+}
+
+.logo-a {
+    color: black;
+}
+
+h1 {
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.h1-desc {
+    font-size: 0.875rem;
+    justify-content: center;
+    align-self: center;
+    padding-top: 0.9375rem;
+    letter-spacing: 0.15rem;
+}
+
+nav,
+.nav-list {
+    column-gap: 1.5625rem;
+}
+
+.nav-a {
+    color: black;
+}
+
+.list,
+.login-btn {
+    align-items: center;
+}
+
+.login-btn {
+    column-gap: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+
+.login-btn img {
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+.bgmenu-div {
+    display: none;
+    width: 1.5625rem;
+    height: 1.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bgmenu-div span {
+    width: 100%;
+    height: 0.125rem;
+    background-color: #000000;
+}
+
+@media (max-width: 56.25rem) {
+    header {
+        justify-content: space-between;
+    }
+
+    nav.flex {
+        display: none;
+    }
+
+    .bgmenu-div {
+        display: flex;
+        margin-right: 1.25rem;
+    }
+
+    .logo {
+        margin-left: 1.25rem;
+    }
+
+    .h1-desc {
+        padding-top: 0.3125rem;
+        align-self: start;
+    }
+}
+
+@media (max-width: 21.625rem) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,159 @@
+footer {
+    background-color: #57BBBF;
+    justify-content: center;
+    gap: 12.5rem;
+}
+
+.contactus {
+    flex-direction: column;
+    padding: 0 1.25rem
+}
+
+.line-contact {
+    margin-right: 4.25rem;
+}
+
+.contactus h2 {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    letter-spacing: 0.125rem;
+    padding-top: 0.9375rem;
+}
+
+form {
+    padding-left: 2.1875rem;
+}
+
+.contact-p1 {
+    padding-top: 2.8125rem;
+    max-width: 12.5rem;
+    overflow-wrap: break-word;
+    line-height: 1.5625rem;
+}
+
+.contact-p2 {
+    padding-top: 1.25rem;
+    max-width: 9.375rem;
+    overflow-wrap: break-word;
+    line-height: 1.5625rem;
+}
+
+.contact-p3 {
+    padding-top: 1.875rem;
+}
+
+.socialplatfrom {
+    padding-top: 1.25rem;
+    font-size: 1.5625rem;
+}
+
+.contact-p4 {
+    max-width: 15.625rem;
+    overflow-wrap: break-word;
+    line-height: 1.25rem;
+    font-size: 0.9375rem;
+    padding-top: 3.75rem;
+}
+
+.footer-a-last {
+    color: black;
+    text-decoration: underline;
+}
+
+.form-wrapper {
+    padding: 2.5rem 3.125rem;
+    width: 100%;
+    max-width: 36.25rem;
+}
+
+.form-row {
+    gap: 1.25rem;
+    margin-bottom: 1.125rem;
+}
+
+.form-group {
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group.full {
+    width: 100%;
+    margin-bottom: 1.125rem;
+}
+
+label {
+    font-size: 0.875rem;
+    color: #111;
+    margin-bottom: 0.375rem;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #57BBBF;
+    border: 0.125rem solid #111;
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    color: #111;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: none;
+    height: 6.875rem;
+}
+
+.submit-row {
+    justify-content: flex-end;
+    margin-top: 0.375rem;
+}
+
+.form-btn {
+    width: 11.25rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 58.0625rem) {
+    footer {
+        flex-direction: column;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        gap: 0;
+    }
+
+    .contactus {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-wrapper {
+        padding: 1.875rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 34.75rem) {
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .submit-row {
+        justify-content: center;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+}

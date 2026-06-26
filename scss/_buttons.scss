@@ -1,0 +1,51 @@
+.btn {
+    color: white;
+    background-color: black;
+    border: 0.0625rem solid black;
+    width: 8.125rem;
+    height: 2.5rem;
+    text-align: center;
+    align-content: center;
+}
+
+.btn-bgw {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    border: 0.0625rem solid black;
+    width: 8.125rem;
+    height: 2.5rem;
+    text-align: center;
+    align-content: center;
+}
+
+.btn-hover-white {
+    color: white;
+    transition: 0.4s;
+    border: 0.125rem solid black;
+    text-align: center;
+}
+
+.btn-hover-white:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-hover-black {
+    color: black;
+    transition: 0.4s;
+    border: 0.125rem solid black;
+}
+
+.btn-hover-black:hover {
+    background-color: black;
+    color: white;
+}
+
+.for-bookit {
+    color: black;
+    transition: 0.2s;
+}
+
+.for-bookit:hover {
+    color: gray;
+}

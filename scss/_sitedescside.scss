@@ -1,0 +1,90 @@
+.abt-section {
+    background-color: white;
+    height: 72vh;
+    justify-content: end;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
+}
+
+.about-me {
+    flex-direction: column;
+    padding-right: 6.25rem;
+}
+
+.abt-me-h2 {
+    font-size: 2.625rem;
+    font-weight: bolder;
+    max-width: 12.5rem;
+    overflow-wrap: break-word;
+    padding-top: 1.875rem;
+}
+
+.abt-me-p {
+    max-width: 22.8125rem;
+    overflow-wrap: break-word;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0187rem;
+    line-height: 1.6875rem;
+    padding-top: 3.4375rem;
+}
+
+.abt-me-p-2 {
+    max-width: 24.375rem;
+    overflow-wrap: break-word;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.6875rem;
+    padding-top: 1.25rem
+}
+
+.a-div-abt {
+    gap: 0.625rem;
+    padding-top: 3.125rem;
+}
+
+.abt-me-a-2 {
+    width: 10.625rem;
+}
+
+@media (max-width: 82.8125rem) {
+    .about-me {
+        padding-left: 3.125rem;
+    }
+
+    .abt-me-p {
+        padding-top: 0.9375rem;
+    }
+}
+
+@media (max-width: 78.1875rem) {
+    .abt-section {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        // padding-bottom: 3.125rem;
+    }
+
+    .about-me {
+        padding-right: 0rem;
+        padding-left: 0rem
+    }
+
+    .abt-img {
+        width: 100%;
+        height: auto;
+        margin-top: 2.5rem;
+    }
+
+    .abt-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 0rem;
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 25rem) {
+    .about-me {
+        padding-left: 0.3125rem;
+    }
+}
