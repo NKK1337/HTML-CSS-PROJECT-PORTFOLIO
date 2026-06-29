@@ -7,8 +7,8 @@
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 0;
-    height: 95vh;
-    height: 95dvh;
+    min-height: 95vh;
+    min-height: 95dvh;
 }
 
 .video-bg {
@@ -51,6 +51,7 @@
 
 .welcom-booknow-a {
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 @media (max-width: 56.25rem) {

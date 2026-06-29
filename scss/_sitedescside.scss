@@ -1,13 +1,35 @@
 .abt-section {
     background-color: white;
-    height: 72vh;
-    justify-content: end;
+    min-height: 72vh;
+    align-items: center;
+    align-items: stretch;
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
 }
 
 .about-me {
     flex-direction: column;
-    padding-right: 6.25rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6.25rem;
+    padding-bottom: 2rem;
+}
+
+.about-content {
+    max-width: 23.75rem;
+    width: 100%;
+
+}
+
+.about-me,
+.abt-img {
+    flex: 1;
+}
+
+.abt-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .abt-me-h2 {
@@ -60,7 +82,6 @@
         height: auto;
         flex-direction: column;
         align-items: center;
-        // padding-bottom: 3.125rem;
     }
 
     .about-me {
@@ -69,16 +90,13 @@
     }
 
     .abt-img {
-        width: 100%;
-        height: auto;
-        margin-top: 2.5rem;
+        height: 60vh;
     }
 
     .abt-img img {
         width: 100%;
-        height: auto;
-        border-radius: 0rem;
-        box-shadow: none;
+        height: 100%;
+        object-fit: cover;
     }
 
 }
