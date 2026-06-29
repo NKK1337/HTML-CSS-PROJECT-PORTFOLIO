@@ -101,6 +101,14 @@ textarea {
     font-family: Arial, sans-serif;
 }
 
+input:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+textarea:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
 textarea {
     resize: none;
     height: 6.875rem;

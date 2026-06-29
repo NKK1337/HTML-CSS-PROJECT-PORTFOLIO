@@ -1,0 +1,185 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 90px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.line-box {
+  width: 40px;
+  height: 20px;
+  padding-top: 60px;
+}
+
+.line {
+  width: 100%;
+  height: 1.8px;
+  background-color: black;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  border: 0.0625rem solid black;
+  width: 8.125rem;
+  height: 2.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.btn-bgw {
+  color: white;
+  background-color: rgb(255, 255, 255);
+  border: 0.0625rem solid black;
+  width: 8.125rem;
+  height: 2.5rem;
+  text-align: center;
+  align-content: center;
+}
+
+.btn-hover-white {
+  color: white;
+  transition: 0.4s;
+  border: 0.125rem solid black;
+  text-align: center;
+}
+
+.btn-hover-white:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-hover-black {
+  color: black;
+  transition: 0.4s;
+  border: 0.125rem solid black;
+}
+
+.btn-hover-black:hover {
+  background-color: black;
+  color: white;
+}
+
+.for-bookit {
+  color: black;
+  transition: 0.2s;
+}
+
+.for-bookit:hover {
+  color: gray;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.625rem;
+  z-index: 9;
+  background: white;
+  justify-content: center;
+  padding-top: 1.875rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  flex-direction: column;
+  padding-right: 4.0625rem;
+}
+
+.logo-a {
+  color: black;
+}
+
+h1 {
+  font-size: 1.5625rem;
+  font-weight: bold;
+}
+
+.h1-desc {
+  font-size: 0.875rem;
+  justify-content: center;
+  align-self: center;
+  padding-top: 0.9375rem;
+  letter-spacing: 0.15rem;
+}
+
+nav,
+.nav-list {
+  -moz-column-gap: 1.5625rem;
+       column-gap: 1.5625rem;
+}
+
+.nav-a {
+  color: black;
+}
+
+.list,
+.login-btn {
+  align-items: center;
+}
+
+.login-btn {
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.login-btn img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+.bgmenu-div {
+  display: none;
+  width: 1.5625rem;
+  height: 1.25rem;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.bgmenu-div span {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #000000;
+}
+
+@media (max-width: 56.25rem) {
+  header {
+    justify-content: space-between;
+  }
+  nav.flex {
+    display: none;
+  }
+  .bgmenu-div {
+    display: flex;
+    margin-right: 1.25rem;
+  }
+  .logo {
+    margin-left: 1.25rem;
+  }
+  .h1-desc {
+    padding-top: 0.3125rem;
+    align-self: start;
+  }
+}
+@media (max-width: 21.625rem) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=services.css.map */
