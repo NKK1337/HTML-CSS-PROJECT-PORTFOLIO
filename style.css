@@ -370,7 +370,7 @@ nav,
   }
 }
 .card-section {
-  background-image: url(../img/bg2.avif);
+  background-image: url(./img/bg2.avif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -456,6 +456,7 @@ nav,
 .card-btn-box {
   align-self: center;
   margin-top: 4.6875rem;
+  margin-bottom: 4rem;
 }
 
 .card-btn-ms {
