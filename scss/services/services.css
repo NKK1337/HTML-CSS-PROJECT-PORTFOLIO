@@ -31,6 +31,11 @@ section {
   background-color: black;
 }
 
+@media (max-width: 930px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 .btn {
   color: white;
   background-color: black;
@@ -182,4 +187,125 @@ nav,
   h1 {
     font-size: 1.25rem;
   }
+}
+main {
+  background-image: url(/img/bg2.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: auto;
+  overflow: auto;
+}
+
+.line-box {
+  width: 40px;
+  height: 20px;
+  padding-top: 60px;
+}
+
+.line {
+  width: 100%;
+  height: 1.8px;
+  background-color: black;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+.services-wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-bx-services {
+  margin-right: 190px;
+  padding-bottom: 35px;
+}
+
+.tabs {
+  position: relative;
+  display: inline-flex;
+  gap: 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 15px;
+  color: #888;
+  white-space: nowrap;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.tab.active {
+  color: #1a1a1a;
+  text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+}
+
+.indicator {
+  position: absolute;
+  bottom: -1px;
+  height: 2px;
+  background: #2a9d8f;
+  border-radius: 2px 2px 0 0;
+  transition: left 0.67s cubic-bezier(0.4, 0, 0.2, 1), width 0.67s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-wrapper,
+.card-wrapper2 {
+  height: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.card {
+  flex-direction: column;
+  width: 282px;
+  height: 316px;
+  background-color: #fff;
+}
+
+.card h3 {
+  padding-top: 30px;
+  max-width: 300px;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  line-height: 25px;
+}
+
+.card p {
+  padding-top: 20px;
+  text-align: center;
+  align-self: center;
+  overflow-wrap: break-word;
+  max-width: 220px;
+  line-height: 23px;
+  font-size: 16px;
+}
+
+.card-bookit {
+  padding-bottom: 25px;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.card-bookit-a {
+  width: 110px;
+}
+
+.card-bookit-a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=services.css.map */

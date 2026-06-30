@@ -31,6 +31,11 @@ section {
   background-color: black;
 }
 
+@media (max-width: 930px) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 .btn {
   color: white;
   background-color: black;
