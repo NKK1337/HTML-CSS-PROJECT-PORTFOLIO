@@ -189,7 +189,7 @@ nav,
   }
 }
 main {
-  background-image: url(/img/bg2.avif);
+  background-image: url(../../img/bg2.avif);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
