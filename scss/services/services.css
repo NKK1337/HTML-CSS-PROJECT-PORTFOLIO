@@ -266,6 +266,8 @@ h2 {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
