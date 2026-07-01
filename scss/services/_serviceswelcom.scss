@@ -6,7 +6,6 @@ main {
     background-attachment: fixed;
     min-height: 100vh;
     height: auto;
-    overflow: auto;
 }
 
 .line-box {
@@ -21,10 +20,11 @@ main {
     background-color: black;
 }
 
-h2 {
+.services-h2 {
     font-weight: bolder;
     font-size: 42px;
     letter-spacing: 3px;
+    margin-bottom: 90px;
 }
 
 .services-wrapper {
@@ -43,6 +43,10 @@ h2 {
     display: inline-flex;
     gap: 32px;
     border-bottom: 1px solid #ccc;
+}
+
+.tabs-wrapper {
+    justify-content: center;
 }
 
 .tab {
@@ -78,6 +82,10 @@ h2 {
     padding-top: 30px;
     align-items: center;
     justify-content: center;
+}
+
+.pagename {
+    margin-bottom: 20px;
 }
 
 .card {
@@ -120,4 +128,35 @@ h2 {
 
 .card-bookit-a:hover {
     text-decoration: underline;
+}
+
+.card .card-p-cost {
+    padding-top: 10px;
+}
+
+.card .h3-linebrake {
+    overflow-wrap: break-word;
+    max-width: 200px;
+    line-height: 30px;
+}
+
+@media (max-width: 920px) {
+    .pagename {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 608px) {
+    main {
+        background-image: none;
+        background-color: #9AD7DF;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card-bookit-a {
+        width: 230px;
+    }
 }

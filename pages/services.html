@@ -40,35 +40,138 @@
     </header>
     <main>
         <section class="services-wrapper flex">
-            <div class="line-box line-bx-services flex">
-                <span class="line"></span>
-            </div>
-            <h2>SERVICES</h2>
-            <div class="tabs" id="tabs">
-                <button class="tab active">All Services</button>
-                <button class="tab">Personal Growth</button>
-                <button class="tab">Career Ambitions</button>
-                <div class="indicator" id="indicator"></div>
-            </div>
-            <div class="card-wrapper flex">
-                <div class="card flex">
-                    <h3><a class="for-bookit" href="#">Free Consultation</a></h3>
-                    <p>Use this area to describe one of your services.</p>
-                    <p>45 min</p>
-                    <div class="flex card-bookit">
-                        <a class="btn card-bookit-a" href="#">Book Now</a>
+            <div class="pagename">
+                <div class="line-box line-bx-services flex">
+                    <span class="line"></span>
+                </div>
+                <h2 class="services-h2">SERVICES</h2>
+                <div class="tabs-wrapper flex">
+                    <div class="tabs" id="tabs">
+                        <button class="tab active">All Services</button>
+                        <button class="tab">Personal Growth</button>
+                        <button class="tab">Career Ambitions</button>
+                        <div class="indicator" id="indicator"></div>
                     </div>
                 </div>
-                <div class="card flex"></div>
-                <div class="card flex"></div>
-            </div>
-            <div class="card-wrapper2 flex">
-                <div class="card flex"></div>
-                <div class="card flex"></div>
-                <div class="card flex"></div>
+                <div class="card-wrapper flex" data-category="personal">
+                    <div class="card flex">
+                        <h3><a class="for-bookit" href="#">Free Consultation</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>45 min</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <h3><a class="for-bookit" href="#">Online Coaching</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>1 hr</p>
+                        <p class="card-p-cost">$70</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <h3 class="h3-linebrake"><a class="for-bookit" href="#">Self-Improvement Workshop</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>1 hr</p>
+                        <p class="card-p-cost">$90</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper2 flex" data-category="career">
+                    <div class="card flex">
+                        <h3><a class="for-bookit" href="#">Corporate Life</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>1 hr</p>
+                        <p class="card-p-cost">$70</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <h3><a class="for-bookit" href="#">Career Coaching</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>1 hr</p>
+                        <p class="card-p-cost">$80</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <h3><a class="for-bookit" href="#">Group Coaching</a></h3>
+                        <p>Use this area to describe one of your services.</p>
+                        <p>1 hr</p>
+                        <p class="card-p-cost">$90</p>
+                        <div class="flex card-bookit">
+                            <a class="btn card-bookit-a" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="flex">
+        <div class="flex contactus">
+            <div class="line-box line-contact flex">
+                <span class="line"></span>
+            </div>
+            <h2>CONTACT</h2>
+            <p class="contact-p1">
+                500 Terry Francine Street,
+                San Francisco, CA 94158
+            </p>
+            <p class="contact-p2">
+                Tel: 123-456-7890
+                Fax: 123-456-7890
+            </p>
+            <p class="contact-p3">
+                info@mysite.com
+            </p>
+            <ul class="flex socialplatfrom">
+                <li><a href="#">🪀</a></li>
+                <li><a href="#">🪀</a></li>
+                <li><a href="#">🪀</a></li>
+                <li><a href="#">🪀</a></li>
+            </ul>
+            <p class="contact-p4">© 2035 by Personal Life Coach. Powered and secured by
+                <a class="footer-a-last" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+                    Wix
+                </a>
+            </p>
+        </div>
+        <form class="flex">
+            <div class="form-wrapper">
+                <div class="flex form-row another">
+                    <div class="flex form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required />
+                    </div>
+                    <div class="flex form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required />
+                    </div>
+                </div>
+                <div class="flex form-group full">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="flex form-group full">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+                </div>
+                <div class="flex form-group full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="flex submit-row">
+                    <button class="btn btn-hover-white form-btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </footer>
     <script src="./script.js"></script>
 </body>
 
