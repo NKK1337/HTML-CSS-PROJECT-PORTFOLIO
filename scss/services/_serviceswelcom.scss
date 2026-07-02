@@ -4,26 +4,26 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 80px 0;
+    padding: 5rem 0;
 }
 
 .line-box {
-    width: 40px;
-    height: 20px;
-    padding-top: 60px;
+    width: 2.5rem;
+    height: 1.25rem;
+    padding-top: 3.75rem;
 }
 
 .line {
     width: 100%;
-    height: 1.8px;
+    height: 0.1125rem;
     background-color: black;
 }
 
 .services-h2 {
     font-weight: bolder;
-    font-size: 42px;
-    letter-spacing: 3px;
-    margin-bottom: 90px;
+    font-size: 2.625rem;
+    letter-spacing: 0.1875rem;
+    margin-bottom: 5.625rem;
 }
 
 .services-wrapper {
@@ -33,15 +33,15 @@ main {
 }
 
 .line-bx-services {
-    margin-right: 190px;
-    padding-bottom: 35px;
+    margin-right: 11.875rem;
+    padding-bottom: 2.1875rem;
 }
 
 .tabs {
     position: relative;
     display: inline-flex;
-    gap: 32px;
-    border-bottom: 1px solid #ccc;
+    gap: 2rem;
+    border-bottom: 0.0625rem solid #ccc;
 }
 
 .tabs-wrapper {
@@ -51,9 +51,9 @@ main {
 .tab {
     background: none;
     border: none;
-    padding: 12px 0;
+    padding: 0.75rem 0;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #888;
     white-space: nowrap;
     transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -61,15 +61,15 @@ main {
 
 .tab.active {
     color: #1a1a1a;
-    text-shadow: 0.3px 0 0 currentColor, -0.3px 0 0 currentColor;
+    text-shadow: 0.0187rem 0 0 currentColor, -0.0187rem 0 0 currentColor;
 }
 
 .indicator {
     position: absolute;
-    bottom: -1px;
-    height: 2px;
+    bottom: -0.0625rem;
+    height: 0.125rem;
     background: #2a9d8f;
-    border-radius: 2px 2px 0 0;
+    border-radius: 0.125rem 0.125rem 0 0;
     transition: left 0.67s cubic-bezier(0.4, 0, 0.2, 1), width 0.67s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -77,52 +77,52 @@ main {
 .card-wrapper2 {
     height: auto;
     flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 30px;
+    gap: 1.875rem;
+    padding-top: 1.875rem;
     align-items: center;
     justify-content: center;
 }
 
 .pagename {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .card {
     flex-direction: column;
-    width: 282px;
-    height: 316px;
+    width: 17.625rem;
+    height: 19.75rem;
     background-color: #fff;
 }
 
 .card h3 {
-    padding-top: 30px;
-    max-width: 300px;
+    padding-top: 1.875rem;
+    max-width: 18.75rem;
     overflow-wrap: break-word;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     align-self: center;
-    line-height: 25px;
+    line-height: 1.5625rem;
 }
 
 .card p {
-    padding-top: 20px;
+    padding-top: 1.25rem;
     text-align: center;
     align-self: center;
     overflow-wrap: break-word;
-    max-width: 220px;
-    line-height: 23px;
-    font-size: 16px;
+    max-width: 13.75rem;
+    line-height: 1.4375rem;
+    font-size: 1rem;
 }
 
 .card-bookit {
-    padding-bottom: 25px;
+    padding-bottom: 1.5625rem;
     justify-content: center;
     align-items: flex-end;
     flex: 1;
 }
 
 .card-bookit-a {
-    width: 110px;
+    width: 6.875rem;
 }
 
 .card-bookit-a:hover {
@@ -130,20 +130,20 @@ main {
 }
 
 .card .card-p-cost {
-    padding-top: 10px;
+    padding-top: 0.625rem;
 }
 
 .card .h3-linebrake {
     overflow-wrap: break-word;
-    max-width: 200px;
-    line-height: 30px;
+    max-width: 12.5rem;
+    line-height: 1.875rem;
 }
 
 .dropdown-wrapper {
     display: none;
     position: relative;
-    width: 282px;
-    font-size: 15px;
+    width: 17.625rem;
+    font-size: 0.9375rem;
 }
 
 .dropdown-toggle {
@@ -151,11 +151,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     background: #fff;
-    border: 2px solid #9AD7DF;
+    border: 0.125rem solid #9AD7DF;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #1a1a1a;
     font-family: inherit;
 }
@@ -172,14 +172,14 @@ main {
 
 .dropdown-list {
     list-style: none;
-    margin: 4px 0 0;
+    margin: 0.25rem 0 0;
     padding: 0;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background: #fff;
-    border: 1px solid #999999;
+    border: 0.0625rem solid #999999;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -189,13 +189,13 @@ main {
 }
 
 .dropdown-wrapper.open .dropdown-list {
-    max-height: 220px;
+    max-height: 13.75rem;
     opacity: 1;
     pointer-events: auto;
 }
 
 .dropdown-item {
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     cursor: pointer;
     color: #1a1a1a;
 }
@@ -205,13 +205,13 @@ main {
     background-color: #fff;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 57.5rem) {
     .pagename {
-        padding-left: 15px;
+        padding-left: 0.9375rem;
     }
 }
 
-@media (max-width: 608px) {
+@media (max-width: 38rem) {
     main {
         background-image: none;
         background-color: #9AD7DF;
@@ -227,10 +227,10 @@ main {
     }
 
     .card {
-        height: 300px;
+        height: 18.75rem;
     }
 
     .card-bookit-a {
-        width: 230px;
+        width: 14.375rem;
     }
 }

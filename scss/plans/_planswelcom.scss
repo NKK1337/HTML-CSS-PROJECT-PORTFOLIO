@@ -1,0 +1,87 @@
+main {
+    background-image: url(../../img/bg2.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: auto;
+    // padding: 5rem 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagename {
+    flex-direction: column;
+}
+
+.plans-h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding-top: 40px;
+}
+
+.plans-p {
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.card-container {
+    padding-top: 60px;
+}
+
+.card-container,
+.card-container2 {
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 290px;
+    height: 340px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.c {
+    border-bottom: none;
+}
+
+.o {
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 939px) {
+    .c {
+        border-bottom: solid black 2px;
+    }
+
+    .card-gap {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 614px) {
+    main {
+        background-image: none;
+        background-color: #9AD7DF;
+    }
+
+    .c,
+    .b {
+        border-bottom: none;
+    }
+
+    .g {
+        border-top: none;
+    }
+
+    .card-gap {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
