@@ -44,6 +44,7 @@ main {
     height: 340px;
     background-color: white;
     border: 2px solid black;
+    flex-direction: column;
 }
 
 .c {
@@ -52,6 +53,34 @@ main {
 
 .o {
     background-color: rgba(255, 255, 255, 0.55);
+}
+
+.bestvalue {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    background: #5fc8c8;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 6px 5px;
+    white-space: nowrap;
+    border: 2px solid black;
+}
+
+.price {
+    font-size: 70px;
+    line-height: 1;
+    align-self: center;
+}
+
+.dollar {
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 2px;
 }
 
 @media (max-width: 939px) {
@@ -80,8 +109,16 @@ main {
         border-top: none;
     }
 
+    .o {
+        background-color: white;
+    }
+
     .card-gap {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+    .badge {
+        display: none;
     }
 }
