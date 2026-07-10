@@ -1,0 +1,127 @@
+main {
+    background-image: url(../../img/blogsbg.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    flex-direction: column;
+    z-index: 0;
+    margin-bottom: 20px;
+}
+
+.for-center {
+    align-self: center;
+    flex-direction: column;
+}
+
+.white-bg {
+    background-color: #fff;
+    min-height: 485px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.main-h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    overflow-wrap: break-word;
+    max-width: 380px;
+    text-align: start;
+    padding-top: 35px;
+}
+
+.card-container {
+    row-gap: 30px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.page-nav {
+    align-self: center;
+}
+
+
+.stat-icon {
+    display: none;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        display: block;
+    }
+}
+
+.card-img-link {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+    main {
+        background-attachment: scroll;
+        background-image: none;
+        background-color: white;
+    }
+
+    .mob-bg {
+        background-image: url(../../img/blogsbg.avif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-width: 100vw;
+        padding-bottom: 100px;
+        padding-left: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: calc(100vw - 32px);
+        border-radius: 8px;
+        align-items: center;
+    }
+
+    .card-img-link {
+        flex: none;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .card-body {
+        padding: 16px 18px 18px;
+    }
+
+    .title {
+        font-size: 21px;
+        margin: 14px 0 8px;
+    }
+
+    .desc-link {
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .footer-row {
+        padding-top: 14px;
+    }
+
+    .stat-text {
+        display: none;
+    }
+
+    .stat-icon {
+        display: inline-flex;
+    }
+
+    .bookmark svg {
+        width: 16px;
+        height: 16px;
+    }
+}
