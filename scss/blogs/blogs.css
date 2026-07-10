@@ -36,7 +36,6 @@ section {
     scroll-behavior: auto;
   }
 }
-
 .btn {
   color: white;
   background-color: black;
@@ -127,7 +126,7 @@ h1 {
 nav,
 .nav-list {
   -moz-column-gap: 1.5625rem;
-  column-gap: 1.5625rem;
+       column-gap: 1.5625rem;
 }
 
 .nav-a {
@@ -141,7 +140,7 @@ nav,
 
 .login-btn {
   -moz-column-gap: 0.9375rem;
-  column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
   padding-left: 0.9375rem;
 }
 
@@ -169,32 +168,26 @@ nav,
   header {
     justify-content: space-between;
   }
-
   nav.flex {
     display: none;
   }
-
   .bgmenu-div {
     display: flex;
     margin-right: 1.25rem;
   }
-
   .logo {
     margin-left: 1.25rem;
   }
-
   .h1-desc {
     padding-top: 0.3125rem;
     align-self: start;
   }
 }
-
 @media (max-width: 21.625rem) {
   h1 {
     font-size: 1.25rem;
   }
 }
-
 main {
   background-image: url(../../img/blogsbg.avif);
   background-size: cover;
@@ -245,7 +238,6 @@ main {
   align-items: center;
   gap: 5px;
 }
-
 .stat-icon svg {
   width: 16px;
   height: 16px;
@@ -264,7 +256,6 @@ main {
     background-image: none;
     background-color: white;
   }
-
   .mob-bg {
     background-image: url(../../img/blogsbg.avif);
     background-size: cover;
@@ -274,54 +265,44 @@ main {
     padding-bottom: 100px;
     padding-left: 20px;
   }
-
   .card {
     flex-direction: column;
     width: calc(100vw - 32px);
     border-radius: 8px;
     align-items: center;
   }
-
   .card-img-link {
     flex: none;
     width: 100%;
     aspect-ratio: 4/3;
   }
-
   .card-body {
     padding: 16px 18px 18px;
   }
-
   .title {
     font-size: 21px;
     margin: 14px 0 8px;
   }
-
   .desc-link {
     font-size: 14px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
   .footer-row {
     padding-top: 14px;
   }
-
   .stat-text {
     display: none;
   }
-
   .stat-icon {
     display: inline-flex;
   }
-
   .bookmark svg {
     width: 16px;
     height: 16px;
   }
 }
-
 .card {
   display: flex;
   width: min(61.25rem, 100vw - 1.875rem);
@@ -438,7 +419,7 @@ main {
   transform: scale(1.15);
 }
 
-#bookmark-toggle:checked+.bookmark svg {
+#bookmark-toggle:checked + .bookmark svg {
   transform: scale(1.2);
   fill: orange;
   stroke: orange;
@@ -511,7 +492,7 @@ main {
   transform: scale(1.15);
 }
 
-#like-toggle:checked+.like svg {
+#like-toggle:checked + .like svg {
   transform: scale(1.2);
   fill: red;
 }
@@ -534,7 +515,7 @@ main {
   transform: scale(1.15);
 }
 
-#bookmark-toggle-card2:checked+.bookmark svg {
+#bookmark-toggle-card2:checked + .bookmark svg {
   transform: scale(1.2);
   fill: orange;
   stroke: orange;
@@ -558,7 +539,7 @@ main {
   transform: scale(1.15);
 }
 
-#like-toggle-card2:checked+.like svg {
+#like-toggle-card2:checked + .like svg {
   transform: scale(1.2);
   fill: red;
   stroke: red;
@@ -752,38 +733,30 @@ textarea {
     padding-right: 1.25rem;
     gap: 0;
   }
-
   .contactus {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
   form {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-
   .form-wrapper {
     padding: 1.875rem;
     max-width: 100%;
   }
 }
-
 @media (max-width: 34.75rem) {
   .form-row {
     flex-direction: column;
     gap: 0.75rem;
   }
-
   .submit-row {
     justify-content: center;
   }
-
   .form-btn {
     width: 100%;
   }
-}
-
-/*# sourceMappingURL=blogs.css.map */
+}/*# sourceMappingURL=blogs.css.map */
