@@ -4,11 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coaching Professional</title>
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../scss/guides/guides.css">
 </head>
 
 <body>
+    <header class="flex">
+        <div class="flex logo">
+            <h1><a class="logo-a" href="../index.html">ALLAN JOHNSON</a></h1>
+            <span class="h1-desc"><a class="logo-a" href="../index.html">Personal Life Coach</a></span>
+        </div>
+        <div class="bgmenu-div">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="flex">
+            <div class="flex list">
+                <ul class="flex nav-list">
+                    <li><a class="nav-a" href="#">About</a></li>
+                    <li><a class="nav-a" href="../pages/services.html">Services</a></li>
+                    <li><a class="nav-a" href="./plans.html">Plans</a></li>
+                    <li><a class="nav-a" href="./blogs.html">Blog</a></li>
+                    <li><a class="nav-a" href="./gudes.html">Guides</a></li>
+                    <li><a class="nav-a" href="#">Contact</a></li>
+                    <li><a class="nav-a" href="#">Members</a></li>
+                </ul>
+            </div>
+            <div class="flex login-btn">
+                <a href="#"><img src="../img/svgviewer-output.svg" alt="Loginicon"></a>
+                <a class="nav-a" href="#">Log In</a>
+            </div>
+        </nav>
+    </header>
+    <main class="flex">
+        <div class="for-center flex">
+            <section class="section">
+                <div class="line-box lb-guid flex">
+                    <span class="line"></span>
+                </div>
+                <h2 class="main-h2">GUIDES</h2>
+                <p class="main-p">
+                    Use this area to upload files you wish to share with your users. You can manage who has access to
+                    your files and what they can do, such as view & download, upload items and more.
+                </p>
+            </section>
+            <div class="panel">
+                <h2 class="panel-title">Files &amp; Folders</h2>
+                <div class="search-row flex">
+                    <div class="search-box flex">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="7" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                        <input class="input" type="text" placeholder="Search 'Files &amp; Folders'...">
+                    </div>
+                </div>
+                <div class="grid flex" role="table" aria-label="Files and folders">
+                    <div class="row head-row flex" role="row">
+                        <div class="cell col-check" role="columnheader"><input type="checkbox"></div>
+                        <div class="cell col-name" role="columnheader">Item name</div>
+                        <div class="cell col-updated sortable" role="columnheader">Last updated <span
+                                class="arrow">↓</span></div>
+                        <div class="cell col-views" role="columnheader">Views</div>
+                        <div class="cell col-favs" role="columnheader">Favorites</div>
+                        <div class="cell col-contrib" role="columnheader">Contributors</div>
+                        <div class="cell col-menu" role="columnheader">↑↓</div>
+                    </div>
+
+                    <div class="row item-row flex" role="row">
+                        <div class="cell col-check"><input type="checkbox"></div>
+                        <div class="cell col-name name-cell flex">
+                            <div class="folder-icon">
+                                <div class="back"></div>
+                                <div class="front"></div>
+                            </div>
+                            <div class="name-text">
+                                <div class="item-name">Free Tools</div>
+                                <div class="item-count">1 item</div>
+                                <div class="item-meta">Jun 14, 2026 · 10 views · 0 favorites</div>
+                            </div>
+                        </div>
+                        <div class="cell col-updated">Jun 14, 2026</div>
+                        <div class="cell col-views">10</div>
+                        <div class="cell col-favs favorites-cell flex">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2" />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                        <div class="cell col-contrib contributors-cell flex">
+                            <div class="avatar flex">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                                </svg>
+                            </div>
+                            <span>Member</span>
+                        </div>
+                        <div class="cell col-menu"><button class="menu-dots">⋮</button></div>
+                    </div>
+
+                    <div class="row item-row flex" role="row">
+                        <div class="cell col-check"><input type="checkbox"></div>
+                        <div class="cell col-name name-cell flex">
+                            <div class="folder-icon">
+                                <div class="back"></div>
+                                <div class="front"></div>
+                            </div>
+                            <div class="name-text">
+                                <div class="item-name">Clients Only</div>
+                                <div class="item-count">0 items</div>
+                                <div class="item-meta">Jul 27, 2021 · 1 view · 0 favorites</div>
+                            </div>
+                        </div>
+                        <div class="cell col-updated">Jul 27, 2021</div>
+                        <div class="cell col-views">1</div>
+                        <div class="cell col-favs favorites-cell flex">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2" />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                        <div class="cell col-contrib contributors-cell flex">
+                            <div class="avatar flex">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                                </svg>
+                            </div>
+                            <span>Member</span>
+                        </div>
+                        <div class="cell col-menu"><button class="menu-dots">⋮</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex">
+        <div class="flex contactus">
+            <div class="line-box line-contact flex">
+                <span class="line"></span>
+            </div>
+            <h2>CONTACT</h2>
+            <p class="contact-p1">
+                500 Terry Francine Street,
+                San Francisco, CA 94158
+            </p>
+            <p class="contact-p2">
+                Tel: 123-456-7890
+                Fax: 123-456-7890
+            </p>
+            <p class="contact-p3">
+                info@mysite.com
+            </p>
+            <ul class="flex socialplatfrom">
+                <li><a href="https://www.facebook.com/watch/?v=442898693419478" target="_blank"><img
+                            src="../img/fb.avif" alt="facebookicon"></a></li>
+                <li><a href="https://x.com/MIT_CSAIL/status/1363172815315214336?lang=en" target="_blank"><img
+                            src="../img/twiter.avif" alt="twittericon"></a></li>
+                <li><a href="https://www.instagram.com/reel/DYepUgtohel/" target="_blank"><img src="../img/ig.avif"
+                            alt="instagramicon"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><img src="../img/yt.avif"
+                            alt="youtubeicon"></a></li>
+            </ul>
+            <p class="contact-p4">© 2035 by Personal Life Coach. Powered and secured by
+                <a class="footer-a-last" href="https://www.youtube.com/watch?v=oHg5SJYRHA0">
+                    Wix
+                </a>
+            </p>
+        </div>
+        <form class="flex">
+            <div class="form-wrapper">
+                <div class="flex form-row another">
+                    <div class="flex form-group">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first-name" required />
+                    </div>
+                    <div class="flex form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last-name" required />
+                    </div>
+                </div>
+                <div class="flex form-group full">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="flex form-group full">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+                </div>
+                <div class="flex form-group full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="flex submit-row">
+                    <button class="btn btn-hover-white form-btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </footer>
 
 </body>
 
