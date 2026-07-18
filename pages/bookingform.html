@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coaching Professional</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../scss/services/services.css">
+    <link rel="stylesheet" href="../scss/bookingform/bookingform.css">
 </head>
 
 <body>
@@ -38,90 +38,84 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="services-wrapper flex">
-            <div class="pagename">
-                <div class="line-box line-bx-services flex">
-                    <span class="line"></span>
+    <main class="flex">
+        <section class="flex">
+            <div class="back-button">
+                <a class="a-back" href="./freeconsultation.html">
+                    <svg class="icon" viewBox="0 0 20 20" fill="currentColor" width="30" height="30" aria-hidden="true">
+                        <path
+                            d="M12.2929466,3.99983983 L13.0000534,4.70694661 L7.7015668,10.0028398 L13,15.293 L12.2928932,16.0001068 L6.2895668,10.0061485 L6.2925668,10.0028398 L6.29036026,10 L12.2929466,3.99983983 Z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a class="a-back" href="./freeconsultation.html"><span class="word">Back</span></a>
+            </div>
+            <h2 class="main-h2">BOOKING FORM</h2>
+            <div class="form-bookdet-wraper flex">
+                <div class="book-form flex">
+                    <div class="clinet">
+                        <span class="client-span">Client Details</span>
+                    </div>
+                    <div class="flex gray-box">
+                        <p>Have an account?</p>
+                        <a class="login-a" href="#">Log in</a>
+                    </div>
+                    <form id="bookformid" action="/submit" class="contact-form flex">
+                        <div class="form-row flex">
+                            <div class="form-group flex">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input required type="text" id="name" name="name" />
+                            </div>
+                            <div class="form-group flex">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input required type="email" id="email" name="email" />
+                            </div>
+                        </div>
+                        <div class="form-group flex phone-group">
+                            <label>Phone Number</label>
+                            <div class="phone-input flex">
+                                <div class="country-select flex" id="countrySelect">
+                                    <span class="flag" id="selectedFlag">🇺🇸</span>
+                                    <svg class="chevron" viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                                        <path
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                    </svg>
+                                </div>
+                                <input required type="tel" id="phone" name="phone" placeholder="" />
+                                <div class="country-dropdown flex" id="countryDropdown">
+                                    <div class="search-box flex">
+                                        <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor" width="16"
+                                            height="16">
+                                            <path fill-rule="evenodd"
+                                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <input type="text" id="countrySearch" placeholder="Search" />
+                                    </div>
+                                    <div class="country-list flex" id="countryList"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group flex">
+                            <label for="message">Add Your Message</label>
+                            <textarea id="message" name="message" rows="6"></textarea>
+                        </div>
+                    </form>
                 </div>
-                <h2 class="services-h2">SERVICES</h2>
-                <div class="tabs-wrapper flex">
-                    <div class="tabs" id="tabs">
-                        <button class="tab active">All Services</button>
-                        <button class="tab">Personal Growth</button>
-                        <button class="tab">Career Ambitions</button>
-                        <div class="indicator" id="indicator"></div>
+                <div class="book-details flex">
+                    <div class="bk-div flex">
+                        <p>Booking Details</p>
                     </div>
-                    <div class="dropdown-wrapper" id="dropdownWrapper">
-                        <button class="dropdown-toggle" id="dropdownToggle" type="button">
-                            <span id="dropdownLabel">All Services</span>
-                            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none">
-                                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <ul class="dropdown-list" id="dropdownList">
-                            <li class="dropdown-item active" data-filter="all">All Services</li>
-                            <li class="dropdown-item" data-filter="personal">Personal Growth</li>
-                            <li class="dropdown-item" data-filter="career">Career Ambitions</li>
-                        </ul>
+                    <div class="frecons">
+                        <p>Free Consultation</p>
+                        <p>July 20, 2026 at 10:00 am</p>
                     </div>
-                </div>
-                <div class="card-wrapper flex" data-category="personal">
-                    <div class="card flex">
-                        <h3><a class="for-bookit" href="#">Free Consultation</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>45 min</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
+                    <div class="mrdt-div flex">
+                        <p>More Details</p>
                     </div>
-                    <div class="card flex">
-                        <h3><a class="for-bookit" href="#">Online Coaching</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>1 hr</p>
-                        <p class="card-p-cost">$70</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="card flex">
-                        <h3 class="h3-linebrake"><a class="for-bookit" href="#">Self-Improvement Workshop</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>1 hr</p>
-                        <p class="card-p-cost">$90</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper2 flex" data-category="career">
-                    <div class="card flex">
-                        <h3><a class="for-bookit" href="#">Corporate Life</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>1 hr</p>
-                        <p class="card-p-cost">$70</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="card flex">
-                        <h3><a class="for-bookit" href="#">Career Coaching</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>1 hr</p>
-                        <p class="card-p-cost">$80</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="card flex">
-                        <h3><a class="for-bookit" href="#">Group Coaching</a></h3>
-                        <p>Use this area to describe one of your services.</p>
-                        <p>1 hr</p>
-                        <p class="card-p-cost">$90</p>
-                        <div class="flex card-bookit">
-                            <a class="btn card-bookit-a" href="#">Book Now</a>
-                        </div>
+                    <div class="book-button flex">
+                        <button type="submit" form="bookformid" class="book-button-btn btn btn-hover-white">Book
+                            Now</button>
                     </div>
                 </div>
             </div>
@@ -190,7 +184,7 @@
             </div>
         </form>
     </footer>
-    <script src="./script.js"></script>
+    <script src="../scss/bookingform/script2.js"></script>
 </body>
 
 </html>
